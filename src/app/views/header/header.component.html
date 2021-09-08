@@ -1,0 +1,52 @@
+
+<!-- Page Preloder -->
+<!-- <div id="preloder">
+  <div class="loader"></div>
+</div> -->
+<!-- Header Section Begin -->
+<header class="header-section">
+  <div class="container-fluid">
+      <div class="inner-header">
+          <div class="logo">
+              <a href="./index.html"><img src="assets/style/img/logo.png" alt=""></a>
+          </div>
+          <!-- *ngIf="!isLoggedIn" -->
+            <div class="main-menu" *ngIf="isLoggedIn">
+              <ul>
+                  <li><a href="#"><img [src]="imageRef" alt="Error">{{username}}</a>
+                      <ul class="drop-menu">
+                          <li><a (click)="goToUserUpdate()">My Profile</a></li>
+                          <li><a (click)="goToChangePass()">Change password</a></li>
+                          <li><a href="#">Settings</a></li>
+                          <div class="dropdown-divider"></div>
+                          <li><a (click)="logout()">Logout</a></li>
+                      </ul>
+                  </li>
+              </ul>
+            </div>
+          <div class="nav-right" *ngIf="!isLoggedIn">
+            <a routerLink="auth/signup" class="btn btn-outline-light">Sign up</a>
+            <a routerLink="auth/login" class="btn btn-outline-light">Login</a>
+          </div>
+
+          <nav class="main-menu mobile-menu">
+              <ul>
+                  <li class="active"><a href="./index.html">Home</a></li>
+                  <li><a href="rooms.html">Houses</a></li>
+                  <li><a href="#">Pages</a>
+                      <ul class="drop-menu">
+                          <li><a href="about-us.html">My house</a></li>
+                          <li><a href="rooms.html">My Reservation</a></li>
+                          <li><a href="services.html">Services</a></li>
+                      </ul>
+                  </li>
+                  <li><a href="./blog.html">New house</a></li>
+                  <li><a href="./about-us.html">About</a></li>
+                  <li><a href="./contact.html">Contact</a></li>
+              </ul>
+          </nav>
+          <div id="mobile-menu-wrap"></div>
+      </div>
+  </div>
+</header>
+<!-- Header End -->

@@ -1,0 +1,10 @@
+<app-header class="header" [username]="username" [isLoggedIn] = "isLoggedIn" [imageRef] = "imageRef"></app-header>
+<div>
+  <main>
+    <div class="container-fluid">
+      <router-outlet></router-outlet>
+      <!-- <app-home ></app-home> -->
+    </div>
+  </main>
+</div>
+<app-footer  style="bottom: 0;"></app-footer>

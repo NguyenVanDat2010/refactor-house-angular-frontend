@@ -1,0 +1,9 @@
+header {
+  width: 100%;
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
